@@ -1,0 +1,5 @@
+{
+  "name": "React Memory Game",
+  "description": "A classic two-player memory matching game. Players take turns flipping cards to find matching pairs. The player with the most pairs at the end wins. The number of pairs is configurable.",
+  "requestFramePermissions": []
+}
