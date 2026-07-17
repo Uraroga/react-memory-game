@@ -4,6 +4,14 @@ React Memory Game e un gioco memory per due giocatori. I giocatori scoprono le c
 
 Il gioco funziona interamente in locale e non richiede chiavi API, servizi esterni o file `.env`.
 
+## Gioca online
+
+Puoi giocare online a questo indirizzo:
+
+```text
+https://uraroga.github.io/react-memory-game/
+```
+
 ## Tecnologie utilizzate
 
 - React
@@ -67,6 +75,12 @@ npm run build
 
 I file generati vengono salvati nella cartella `dist`.
 
+## Pubblicazione automatica
+
+Il sito viene compilato e pubblicato automaticamente tramite GitHub Actions dopo ogni aggiornamento del ramo `main`.
+
+Il workflow installa le dipendenze, esegue la build di produzione e pubblica la cartella `dist` tramite GitHub Pages.
+
 ## Struttura essenziale del progetto
 
 ```text
@@ -89,6 +103,6 @@ I file generati vengono salvati nella cartella `dist`.
 └── vite.config.ts
 ```
 
-## Note sulla licenza
+## Licenza
 
-Nel progetto non e presente un file di licenza.
+Questo progetto e distribuito con licenza MIT. Consulta il file `LICENSE` per i dettagli.
