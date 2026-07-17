@@ -1,20 +1,94 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# React Memory Game
 
-# Run and deploy your AI Studio app
+React Memory Game e un gioco memory per due giocatori. I giocatori scoprono le carte a turno e cercano di trovare coppie uguali. Vince chi trova piu coppie alla fine della partita.
 
-This contains everything you need to run your app locally.
+Il gioco funziona interamente in locale e non richiede chiavi API, servizi esterni o file `.env`.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1RobIcXfzUVSxMCmRShxT87kaR_OTHnQc
+## Tecnologie utilizzate
 
-## Run Locally
+- React
+- TypeScript
+- Vite
+- Tailwind CSS tramite CDN
 
-**Prerequisites:**  Node.js
+## Requisiti
 
+- Node.js
+- npm
+- Git, se vuoi scaricare il progetto con `git clone`
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Versione consigliata di Node.js: 22.12.0 o superiore.
+
+## Scaricare il progetto
+
+```bash
+git clone https://github.com/Uraroga/react-memory-game.git
+```
+
+## Entrare nella cartella
+
+```bash
+cd react-memory-game
+```
+
+## Installare le dipendenze
+
+```bash
+npm install
+```
+
+## Avviare il server locale
+
+```bash
+npm run dev
+```
+
+Dopo l'avvio, apri questo indirizzo nel browser:
+
+```text
+http://localhost:3000
+```
+
+Se la porta 3000 e gia occupata, Vite potrebbe indicare un indirizzo diverso nel terminale. In quel caso apri l'indirizzo mostrato da Vite.
+
+## Arrestare il server
+
+Per fermare il server locale, torna nel terminale in cui e in esecuzione `npm run dev` e premi:
+
+```text
+Ctrl + C
+```
+
+## Creare la versione di produzione
+
+```bash
+npm run build
+```
+
+I file generati vengono salvati nella cartella `dist`.
+
+## Struttura essenziale del progetto
+
+```text
+.
+├── App.tsx
+├── components/
+│   ├── Card.tsx
+│   ├── GameBoard.tsx
+│   ├── GameControls.tsx
+│   ├── GameOverModal.tsx
+│   └── PlayerDisplay.tsx
+├── hooks/
+│   └── useGameLogic.ts
+├── constants.ts
+├── types.ts
+├── index.html
+├── index.tsx
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+```
+
+## Note sulla licenza
+
+Nel progetto non e presente un file di licenza.
